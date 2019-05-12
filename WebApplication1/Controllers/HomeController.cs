@@ -8,8 +8,16 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
+    [Route("Teste")]
+    [Route("[controller]")]
     public class HomeController : Controller
     {
+        //[Route("")]
+        //[Route("XYZ")]
+        //[Route("Home/ABC")]
+        [Route("ABC")]
+        [Route("XYZ")]
+        [Route("Curso")]
         public IActionResult Index()
         {
             return View();
